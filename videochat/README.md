@@ -15,7 +15,7 @@ A simple iOS videochat app built with Vonage Video APIs.
 ### 1. Create a Vonage Account and get your credentials
 
 - Sign up at [Vonage](https://developer.vonage.com/en/home) and create a new app. Then copy your **App ID**.
-- Open the Playground, start a session, and copy the **Session ID** and **Token**.
+- Open the [Playground](https://tools.vonage.com/video/playground), start a session, and copy the **Session ID** and **Token**.
 
 [Check out this guide](https://developer.vonage.com/en/tutorials/basic-video-chat/step-3/swift) for a detailed explanation of how you can create the account and get your **App ID**, **Session ID** and **Token**.
 
