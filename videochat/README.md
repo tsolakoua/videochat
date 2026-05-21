@@ -12,12 +12,12 @@ A simple iOS videochat app built with Vonage Video APIs.
 
 ## How to run the app 
 
-### 1. Create a Vonage Account and get your credentials 
+### 1. Create a Vonage Account and get your credentials
 
 - Sign up at [Vonage](https://developer.vonage.com/en/home) and create a new app. Then copy your **App ID**.
 - Open the Playground, start a session, and copy the **Session ID** and **Token**.
 
-]Check out this guide](https://developer.vonage.com/en/tutorials/basic-video-chat/step-3/swift) for a detailed explanation of how you can create the account and get your **App ID**, **Session ID** and **Token**
+[Check out this guide](https://developer.vonage.com/en/tutorials/basic-video-chat/step-3/swift) for a detailed explanation of how you can create the account and get your **App ID**, **Session ID** and **Token**.
 
 ### 2. Clone the Repo
 
@@ -31,7 +31,7 @@ Add the Vonage Video API iOS SDK by adding the `https://github.com/opentok/vonag
 
 To add a dependency in your Xcode project, go to **File** > **Swift Packages** > **Add Package Dependency** and enter its repository URL.
 
-### 3. Configure Secrets in Xcode
+### 4. Configure Secrets in Xcode
 
 Secret keys are not committed to the repo. You'll need to create a local config file manually.
 
@@ -60,5 +60,5 @@ SESSION_TOKEN = your-token
 | `SESSION_ID` | String | `$(SESSION_ID)` |
 | `SESSION_TOKEN` | String | `$(SESSION_TOKEN)` |
 
-### 4. Build and run the app
+### 5. Build and run the app
 Choose the simulator and run it.
