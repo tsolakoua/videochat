@@ -2,13 +2,22 @@
 
 A simple iOS videochat app built with Vonage Video APIs.
 
+<table>
+  <tr>
+    <td>
+
 **Features**
 - Connect to a session
 - Leave a session
 - Toggle microphone on/off
 - Toggle camera on/off
 
-![](images/videochat.gif)
+  </td>
+    <td>
+      <img src="images/videochat.gif" width="150" />
+    </td>
+  </tr>
+</table>
 
 ---
 
