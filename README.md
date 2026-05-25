@@ -8,6 +8,8 @@ A simple iOS videochat app built with Vonage Video APIs.
 - Toggle microphone on/off
 - Toggle camera on/off
 
+![](images/videochat.gif)
+
 ---
 
 ## How to run the app 
