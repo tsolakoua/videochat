@@ -23,13 +23,15 @@ final class VideoManager: NSObject, ObservableObject, OTPublisherKitDelegate, OT
     private lazy var publisher: OTPublisher? = {
         let settings = OTPublisherSettings()
         settings.name = UIDevice.current.name
-        return OTPublisher(delegate: self, settings: settings)
+        let publisher = OTPublisher(delegate: self, settings: settings)
+        publisher?.publishAudio = isAudioEnabled
+        return publisher
     }()
     
     @Published var pubView: UIView?
     @Published var subView: UIView?
     
-    @Published private(set) var isAudioEnabled = true
+    @Published private(set) var isAudioEnabled = false
     @Published private(set) var isVideoEnabled = true
     
     public func setup() {
@@ -108,6 +110,7 @@ extension VideoManager: OTSessionDelegate {
         guard let publisher else {
             return
         }
+        publisher.publishAudio = isAudioEnabled
         session.publish(publisher, error: &error)
         
         if let view = publisher.view {
